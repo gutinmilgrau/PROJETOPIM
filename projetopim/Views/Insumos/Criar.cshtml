@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Registrar Cultivos e Insumos";
+}
+<div class="text-center">
+
+    <h1 class="display-4">Registrar Cultivos e Insumos</h1>
+</div>
+<form>
+    <div class="mb-3">
+        <label for="tipocultivo" class="form-label">Cultivo</label>
+        <input type="text" class="form-control" placeholder="Insira o tipo do cultivo">
+    </div>
+    <div class="mb-3">
+        <label for="tipoinsumo" class="form-label">Insumo</label>
+        <input type="text" class="form-control" placeholder="Insira o tipo do insumo">
+    </div>
+    <div class="mb-3">
+        <label for="fornecedor class="form-label">Fornecedor</label>
+        <input type="text" class="form-control" placeholder="Insira o nome do fornecedor">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Registrar</button>
+    <a class="btn btn-secondary" asp-controller="Insumos" asp-action="Index" role="button">Voltar</a>
+</form>
